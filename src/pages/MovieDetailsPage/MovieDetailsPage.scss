@@ -1,0 +1,54 @@
+.movieDetails {
+
+    .poster-img {
+      width: 300px;
+      height: 400px;
+    }
+  
+    .poster {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 10px;
+    }
+  
+    .generes {
+      display: flex;
+      gap: 5px;
+  
+      .genre {
+        &::after {
+          content: ',';
+        }
+  
+        &:last-child::after {
+          content: none;
+        }
+      }
+    }
+  }
+  
+  .additional-info {
+    display: flex;
+    gap: 10px;
+  
+    &-btn {
+      border: 1px solid transparent;
+      font-size: 16px;
+      text-transform: none;
+      cursor: pointer;
+  
+      background-color: #c3697a;
+      color: white;
+      padding: 10px 15px;
+  
+      transition: background-color 200ms ease;
+      transition: color 200ms ease-in;
+      transition: border 200ms ease-in-out;
+      &:hover {
+        border: 1px solid #c3697a;
+        background-color: white;
+        color: #c3697a;
+      }
+    }
+  }
+  

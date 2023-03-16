@@ -18,7 +18,7 @@ const Navigation = () => {
             to="/movies"
             className="navigation__link"
           >
-            Home
+            Movie
           </Link>
         </li>
       </ul>
